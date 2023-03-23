@@ -1,30 +1,40 @@
-#include "main.h"
-
 #include <stdio.h>
-
+#include "main.h"
 /**
- * print_to_98 Prints all natural numbers from n to 98
- *@n: The number to start printing from
- * Return: Always 0.
+ *print_to_98 - Entry point
+ *@n: the absolute value of the integer.
+ *Explain: '98 Battery Street, the OG'
  */
-
 void print_to_98(int n)
-
 {
+	int a;
+
 	if (n <= 98)
 	{
-	for (; n <= 98; n++)
-	{
-	if (n == 98)
-	{
-	printf("%d", n);
-	printf("\n");
-	break;
+		for (a = n; a <= 98; a++)
+		{
+			if (a != 98)
+			{
+				printf("%d, ", a);
+			}
+			else if (a == 98)
+			{
+				printf("%d\n", a);
+			}
+		}
 	}
-	else
+	else if (n >= 98)
 	{
-	printf("%d, ", n);
-	}
-	}
+		for (a = n; a >= 98; a--)
+		{
+			if (a != 98)
+			{
+				printf("%d, ", a);
+			}
+			else if (a == 98)
+			{
+				printf("%d\n", a);
+			}
+		}
 	}
 }
