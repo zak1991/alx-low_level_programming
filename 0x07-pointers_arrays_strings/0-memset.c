@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 /**
  * _memset - fill a block of memory whit a specific value
  * @s: starting address of memory to be filled
@@ -7,7 +7,7 @@
  *
  * Return: changed array with new value for n bytes
  */
-char *_memeset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
